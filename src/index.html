@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -38,6 +39,51 @@
         </div>
     </header>
 
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    O Front-end é a parte do desenvolvimento web que lida com a interface do usuário. Ele envolve a criação de layouts, design responsivo e interação com o usuário. As tecnologias mais comuns incluem HTML, CSS e JavaScript. Os desenvolvedores front-end trabalham para garantir que os sites sejam visualmente atraentes, funcionais e fáceis de usar.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UX-UI</h2>
+                <p class="event__details__description">
+                    UX (User Experience) e UI (User Interface) são disciplinas essenciais no design de produtos digitais. UX se concentra na experiência do usuário, garantindo que a interação com o produto seja intuitiva e agradável. UI, por outro lado, trata do design visual e da apresentação da interface. Juntas, essas áreas garantem que os usuários tenham uma experiência fluida e satisfatória ao interagir com aplicativos e sites.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UX-UI">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data-Science</h2>
+                <p class="event__details__description">
+                    Data Science é uma área multidisciplinar que combina estatística, análise de dados e aprendizado de máquina para extrair insights valiosos de grandes volumes de dados. Profissionais de Data Science utilizam ferramentas e técnicas avançadas para analisar padrões, prever tendências e tomar decisões informadas. É uma área em crescimento, essencial para empresas que buscam inovação e competitividade no mercado.
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data-Science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Backend</h2>
+                <p class="event__details__description">
+                    O Backend é a parte do desenvolvimento web que lida com a lógica de negócios, banco de dados e servidores. Ele é responsável por processar as solicitações do usuário, gerenciar dados e garantir que tudo funcione corretamente nos bastidores. As tecnologias mais comuns incluem Node.js, Python, Ruby e PHP. Os desenvolvedores backend trabalham para garantir que os sites sejam rápidos, seguros e escaláveis.
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Backend">
+        </div>
+    </section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./scripts/main.js"></script>
 </body>
 </html>
